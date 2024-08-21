@@ -3,6 +3,7 @@
 import { LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { ExplorerLink } from '../cluster/cluster-ui';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function TransactionDetailsUI({ transaction }: { transaction: any }) {
   return (
     <div className="space-y-6 mt-8">
@@ -38,6 +39,7 @@ export function TransactionDetailsUI({ transaction }: { transaction: any }) {
       </div>
 
       <h3 className="text-xl font-bold mt-6">Native Transfers</h3>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {transaction.nativeTransfers.map((transfer: any, index: number) => (
         <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <InfoItem
@@ -66,6 +68,7 @@ export function TransactionDetailsUI({ transaction }: { transaction: any }) {
       ))}
 
       <h3 className="text-xl font-bold mt-6">Account Data</h3>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {transaction.accountData.map((data: any, index: number) => (
         <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <InfoItem
@@ -85,6 +88,7 @@ export function TransactionDetailsUI({ transaction }: { transaction: any }) {
       ))}
 
       <h3 className="text-xl font-bold mt-6">Instructions</h3>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {transaction.instructions.map((instruction: any, index: number) => (
         <div key={index} className="space-y-2">
           <InfoItem

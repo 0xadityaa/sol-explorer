@@ -6,7 +6,7 @@ import { TransactionDetailsUI } from '@/components/transaction/transaction-ui';
 
 export default function TransactionDetailsFeature() {
   const [signature, setSignature] = useState('');
-  const { mutate, data, isLoading, isError } = useTransactionDetails();
+  const { mutate, data, isError } = useTransactionDetails();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,8 +25,7 @@ export default function TransactionDetailsFeature() {
             placeholder="Enter transaction signature"
             className="input input-bordered w-full"
           />
-          <button type="submit" className="btn btn-primary w-full" disabled={isLoading}>
-            {isLoading ? 'Loading...' : 'Search'}
+          <button type="submit" className="btn btn-primary w-full">
           </button>
         </form>
         {isError && <div className="alert alert-error mt-4">Error fetching transaction details</div>}

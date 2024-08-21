@@ -268,7 +268,8 @@ export function AccountTransactions({ address }: { address: PublicKey }) {
                 </tr>
               </thead>
               <tbody>
-                {items?.map((item) => (
+                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                {items?.map((item: any) => (
                   <tr key={item.signature}>
                     <td className="font-mono">
                       <ExplorerLink
