@@ -2,22 +2,6 @@
 
 This project is generated with the [create-solana-dapp](https://github.com/solana-developers/create-solana-dapp) generator.
 
-## Getting Started
-
-### Prerequisites
-
-- Node v18.18.0 or higher
-- Solana CLI 1.18.9 or higher
-- Any Solana Wallet for App Interaction
-
-### Installation
-
-#### Clone the repo
-
-```shell
-git clone <repo-url>
-cd <repo-name>
-```
 
 ## Web Application
 
@@ -34,6 +18,23 @@ The web application is built with Next.js and includes features such as:
 2. Account: Shows account details, balance, and transactions.
 3. Clusters: Allows management of Solana clusters.
 4. Transaction: Displays detailed transaction information.
+
+## Getting Started
+
+### Prerequisites
+
+- Node v18.18.0 or higher
+- Solana CLI 1.18.9 or higher
+- Any Solana Wallet for App Interaction
+
+### Installation
+
+#### Clone the repo
+
+```shell
+git clone <repo-url>
+cd <repo-name>
+```
 
 ## Development
 
